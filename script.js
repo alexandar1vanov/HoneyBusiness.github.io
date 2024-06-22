@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const menuIcon = document.getElementById('menu-icon');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuIcon.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
-    });
+document.getElementById('menu-icon').addEventListener('click', function() {
+    var navMenu = document.getElementById('nav-menu');
+    if (navMenu.classList.contains('show')) {
+        navMenu.classList.remove('show');
+    } else {
+        navMenu.classList.add('show');
+    }
 });
