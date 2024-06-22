@@ -1,0 +1,730 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    z-index: 1;
+    position:fixed;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+section > h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section > p {
+    width: 40%;
+}
+
+section > div {
+    width: 40%;
+}
+
+#hero {
+    background: url("./honeyy.jpg") no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: darkorange;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+#about-us {
+    background-color: black;
+    color: white;
+}
+
+#production-process {
+    background-color: orange;
+    color: black;
+}
+
+#product-info {
+    background-color: white;
+    color: black;
+}
+
+#recipes {
+    background:url("benefits-of-honey-1024x683.jpeg")no-repeat center center;
+
+    height: 100%;
+    background-size: cover;
+    color: black;
+}
+#recipes > ul > li{
+    background-color: whitesmoke;
+    opacity: 80%;
+    border-radius: 20px;
+    padding: 10px;
+}
+#shop {
+    background-color: orange;
+    color: black;
+}
+
+#contact {
+    background:url("beehives.jpg")no-repeat center center;
+    /*height: 100%;*/
+    background-size: cover;
+    /*width: 100%;*/
+    color: black;
+    display: flex;
+}
+
+#contact > div:nth-child(3) {
+    float: left;
+}
+#contact > h2{
+    color: darkorange;
+    background-color: white;
+    opacity: 80%;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 20px;
+}
+#contact > div{
+    background-color: white;
+    opacity: 80%;
+    border-radius: 20px;
+
+}
+#contact > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#name {
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid darkorange;
+    height: 30px;
+    margin: 5px 20px;
+}
+
+#email {
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid darkorange;
+    margin: 5px 20px;
+    height: 30px;
+}
+
+#message {
+
+    width: 400px;
+    margin: 5px 20px;
+    border: 2px solid darkorange;
+    border-radius: 10px;
+    height: 200px;
+}
+
+#contact > form > button {
+    color: white;
+    font-family: "DejaVu Serif Condensed", Serif;
+    width: 380px;
+    height: 50px;
+    background-color: darkorange;
+    border: 2px solid darkorange;
+    border-radius: 30px;
+}
+
+#blog {
+    background-color: black;
+    color: white;
+}
+
+#faq {
+    background-color: orange;
+    color: black;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+#nav-menu > li {
+    padding: 10px 20px;
+    background: linear-gradient(to left, black 50%, darkorange 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+#nav-menu > li > a {
+    color: white;
+}
+
+#nav-menu > li:hover {
+    background-position: left;
+}
+
+#production-process > div:nth-child(7) {
+    padding-top: 50px;
+    width: 70%;
+}
+
+#production-process {
+    background: url("./beekeeping.jpeg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+#production-process > div{
+    width: 40%;
+}
+
+#production-process > div:nth-child(1) {
+    width: 88%;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: darkorange;
+}
+
+#production-process > h2 {
+    opacity: 70%;
+    background-color: white;
+}
+#production-process > div > h3{
+    color: darkorange;
+}
+
+#production-process > div {
+    background-color: white;
+    opacity: 80%;
+    border-radius: 20px;
+}
+
+#production-process > div {
+    margin-top: 20px;
+}
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+}
+
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    display: block;
+    transition: 0.5s;
+    border-radius: 5px;
+    position: absolute;
+    background: orangered;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    position: relative;
+    background: darkorange;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+#product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+}
+
+#product-info h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#product-info > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#product-info > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffd9b3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#about-us{
+    display: flex;
+}
+
+#product-info > div > div img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#product-info > div > div:nth-child(2) {
+    padding-left: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #product-info > div {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #product-info > div > div {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 45%;
+    }
+
+
+    #product-info > div > div img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    #product-info > div > div:nth-child(2) {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 45%;
+    }
+    #product-info > div > div:nth-child(2) > img{
+        margin-left: 20px;
+    }
+}
+
+#product-info {
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#product-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: darkorange;
+}
+
+#product-info > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#product-info .benefit {
+    background-color: #ffd9b3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#product-info .benefit > div {
+    text-align: left;
+}
+
+#product-info .benefit h3 {
+    color: darkorange;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#product-info .benefit p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    #product-info .benefit {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#product-info > div:nth-child(4) > div > div:nth-child(2){
+    margin-left: 20px;
+}
+#product-info > div:nth-child(4) > div:nth-child(2) > div:nth-child(1){
+    margin-left: 20px;
+    align-content: center;
+}
+#product-info > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > h3{
+    margin-top: 30px;
+}
+#product-info > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > h3{
+    margin-top: 40px;
+}
+#recipes {
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+#recipes h2 {
+    color: darkorange;
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#recipes p {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+#recipes ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#recipes ul li {
+    margin-bottom: 15px;
+}
+
+#recipes ul li strong {
+    font-weight: bold;
+}
+
+#recipes ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#recipes ul ul li {
+    margin-bottom: 10px;
+}
+
+#recipes ul ul li strong {
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    #recipes {
+        padding: 15px;
+    }
+    #recipes h2 {
+        font-size: 1.8em;
+    }
+    #recipes p {
+        font-size: 1em;
+    }
+}
+
+#shop {
+    padding: 20px;
+    background-color: darkorange;
+
+}
+
+#shop h2 {
+    color: white;
+    font-size: 2em;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-listing {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+}
+#shop > div > div {
+    margin: 20px 10px;
+}
+.product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    color: darkorange;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.product p {
+    line-height: 1.6;
+}
+
+.product strong {
+    font-weight: bold;
+}
+
+.product button {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #ff9800;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+#contact > div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contact > div h3 {
+    color: darkorange;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#contact > div p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+#contact > div a {
+    color: darkorange;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#contact > div:nth-child(3) a:hover {
+    color: orangered;
+}
+
+footer {
+    background-color:black;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer > div {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+
+#newsletter {
+    text-align: center;
+}
+
+#newsletter h3 {
+    margin-bottom: 10px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter form label {
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+#newsletter form input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#newsletter form button {
+    padding: 8px 16px;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+#newsletter form button:hover {
+    background-color: orangered;
+}
+
+#footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer-links ul li {
+    margin-bottom: 10px;
+}
+
+#footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer-links ul li a:hover {
+    color: darkorange;
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-media h3 {
+    margin-bottom: 10px;
+}
+
+#social-media p {
+    font-size: 0.9em;
+}
+
+
