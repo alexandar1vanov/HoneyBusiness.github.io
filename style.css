@@ -123,13 +123,7 @@ nav {
     max-width: 800px;
     margin: 0 auto;
 }
-#beekeepers{
-    display: flex;
-}
-#beekeepers > div{
-    margin: 10px 20px;
-    width: 100%;
-}
+
 #about-us > div {
     margin-bottom: 30px;
     text-align: left;
