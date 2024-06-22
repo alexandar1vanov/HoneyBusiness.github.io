@@ -651,13 +651,13 @@ footer {
 }
 
 footer > div {
-    flex: 1;
     margin-bottom: 20px;
 }
 
 
 #newsletter {
     text-align: center;
+    width: 100%;
 }
 
 #newsletter h3 {
@@ -695,7 +695,6 @@ footer > div {
 #newsletter form button:hover {
     background-color: orangered;
 }
-
 #footer-links ul {
     list-style-type: none;
     padding: 0;
