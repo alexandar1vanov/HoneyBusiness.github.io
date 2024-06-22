@@ -12,12 +12,14 @@ header {
 }
 
 nav {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .menu-icon {
+    z-index: 1;
     display: none;
     font-size: 24px;
     cursor: pointer;
@@ -25,6 +27,7 @@ nav {
 }
 
 #nav-menu {
+    z-index: 1;
     list-style: none;
     display: flex;
     margin: 0;
@@ -32,10 +35,12 @@ nav {
 }
 
 #nav-menu li {
+    z-index: 1;
     margin-left: 20px;
 }
 
 #nav-menu li a {
+    z-index: 1;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -43,10 +48,12 @@ nav {
 
 @media (max-width: 768px) {
     .menu-icon {
+        z-index: 1;
         display: block;
     }
 
     #nav-menu {
+        z-index: 1;
         display: none;
         flex-direction: column;
         position: absolute;
@@ -57,11 +64,13 @@ nav {
     }
 
     #nav-menu li {
+        z-index: 1;
         margin: 10px 0;
         text-align: center;
     }
 
     #nav-menu.show {
+        z-index: 1;
         display: flex;
     }
 }
@@ -95,9 +104,58 @@ nav {
     border-radius: 5px;
 }
 
+
 #about-us {
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+#about-us h2,
+#about-us h3 {
+    color: darkorange;
+    text-align: center;
+}
+
+#about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#beekeepers{
+    display: flex;
+}
+#beekeepers > div{
+    margin: 10px 20px;
+    width: 100%;
+}
+#about-us > div {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#about-us > div > h3 {
+    color: darkorange;
+}
+
+#about-us > div > p {
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #about-us > div {
+        padding: 0 15px;
+    }
+
+    #about-us > div > h3 {
+        font-size: 1.8em;
+    }
+
+    #about-us > div > p {
+        font-size: 0.9em;
+    }
 }
 
 #production-process {
@@ -289,6 +347,7 @@ nav {
 }
 
 .btn-flip {
+    z-index: 0;
     opacity: 1;
     outline: 0;
     color: #fff;
@@ -309,6 +368,7 @@ nav {
 }
 
 .btn-flip:hover:before {
+    z-index: 0;
     opacity: 0;
     transform: translateY(50%) rotateX(90deg);
 }
@@ -329,6 +389,7 @@ nav {
 }
 
 .btn-flip:before {
+    z-index: 0;
     top: 0;
     left: 0;
     opacity: 1;
@@ -544,9 +605,9 @@ nav {
 }
 
 #shop {
-     padding: 20px;
+    padding: 20px;
     background-color: darkorange;
- }
+}
 
 #shop h2 {
     text-align: center;

@@ -1,8 +1,9 @@
-document.getElementById('menu-icon').addEventListener('click', function() {
-    var navMenu = document.getElementById('nav-menu');
-    if (navMenu.classList.contains('show')) {
-        navMenu.classList.remove('show');
-    } else {
-        navMenu.classList.add('show');
-    }
+// Select the menu icon and menu itself
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('#nav-menu');
+
+// Add click event listener to menu icon
+menuIcon.addEventListener('click', function() {
+    // Toggle the 'show' class on the nav menu
+    navMenu.classList.toggle('show');
 });
